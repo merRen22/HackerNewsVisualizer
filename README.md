@@ -19,4 +19,4 @@ This project shows a list from post in hackerNews an shows them in a webview. Th
 
 This app uses MVVM architecture and follows the guildline shown [here](https://developer.android.com/jetpack/docs/guide).
 
-This is also a single-activity application. All screen transitions are done by [Navigation](https://developer.android.com/guide/navigation?hl=ja).
+This is also a single-activity application. All screen transitions are done by [Navigation](https://developer.android.com/guide/navigation?hl=en).
