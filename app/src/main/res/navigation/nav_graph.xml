@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/publicationsFragment">
+
+    <fragment
+        android:id="@+id/publicationsFragment"
+        android:name="com.hacker.hackernewsvisualizer.ui.PublicationsFragment"
+        android:label="PublicationsFragment"
+        tools:layout="@layout/fragment_publications">
+        <action
+            android:id="@+id/action_publicationsFragment_to_publicationDetail"
+            app:destination="@id/publicationDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicationDetail"
+        android:name="com.hacker.hackernewsvisualizer.ui.PublicationDetailFragment"
+        android:label="PublicationDetail"
+        tools:layout="@layout/fragment_publication_detail" />
+</navigation>

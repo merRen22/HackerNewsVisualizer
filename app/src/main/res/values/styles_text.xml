@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text">
+        <!--
+        <item name="android:fontFamily">@font/family_opensans</item>
+        -->
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--<editor-fold desc="SIZE 18">-->
+    <style name="Text.18">
+        <item name="android:textSize">@dimen/size_all_text_18</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.18.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--</editor-fold>-->
+
+    <!--<editor-fold desc="SIZE 16">-->
+    <style name="Text.16">
+        <item name="android:textSize">@dimen/size_all_text_16</item>
+    </style>
+
+    <style name="Text.16.Singleline">
+        <item name="android:textStyle">normal</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--</editor-fold>-->
+
+    <dimen name="size_all_text_16">16sp</dimen>
+</resources>

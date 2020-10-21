@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/merge_content_guidelines"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        tools:text="How to build amazing apps in no time"
+        android:id="@+id/publication_title"
+        style="@style/Text.18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_general_card"
+        app:layout_constraintBottom_toTopOf="@id/publication_info"
+        app:layout_constraintTop_toTopOf="@id/guideline_content_top"
+        app:layout_constraintStart_toStartOf="@id/guideline_content_start"
+        app:layout_constraintEnd_toEndOf="@id/guideline_content_end"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        tools:text="author - 8h"
+        style="@style/Text.16.Singleline"
+        android:id="@+id/publication_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline_content_start"
+        app:layout_constraintEnd_toEndOf="@id/guideline_content_end"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_content_bottom"/>
+
+    <View
+        android:id="@+id/item_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
